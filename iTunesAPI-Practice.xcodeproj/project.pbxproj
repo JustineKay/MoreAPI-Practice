@@ -17,6 +17,10 @@
 		6B16BFC11BAF050F00FB2EF7 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16BFC01BAF050F00FB2EF7 /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
 		6B16BFC41BAF0A5000FB2EF7 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16BFC31BAF0A5000FB2EF7 /* MusicViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6B16BFC71BAF34CC00FB2EF7 /* iTunesMusicResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16BFC61BAF34CC00FB2EF7 /* iTunesMusicResult.m */; settings = {ASSET_TAGS = (); }; };
+		6B16BFCA1BAF4E5A00FB2EF7 /* iTunesMovieResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16BFC91BAF4E5A00FB2EF7 /* iTunesMovieResult.m */; settings = {ASSET_TAGS = (); }; };
+		6B16BFCD1BAF4EB400FB2EF7 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16BFCC1BAF4EB400FB2EF7 /* MovieViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6B16BFD01BAF501100FB2EF7 /* AppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16BFCF1BAF501100FB2EF7 /* AppsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6B16BFD31BAF503100FB2EF7 /* iTunesAppResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B16BFD21BAF503100FB2EF7 /* iTunesAppResult.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,14 @@
 		6B16BFC31BAF0A5000FB2EF7 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
 		6B16BFC51BAF34CC00FB2EF7 /* iTunesMusicResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesMusicResult.h; sourceTree = "<group>"; };
 		6B16BFC61BAF34CC00FB2EF7 /* iTunesMusicResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesMusicResult.m; sourceTree = "<group>"; };
+		6B16BFC81BAF4E5A00FB2EF7 /* iTunesMovieResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesMovieResult.h; sourceTree = "<group>"; };
+		6B16BFC91BAF4E5A00FB2EF7 /* iTunesMovieResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesMovieResult.m; sourceTree = "<group>"; };
+		6B16BFCB1BAF4EB400FB2EF7 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		6B16BFCC1BAF4EB400FB2EF7 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		6B16BFCE1BAF501100FB2EF7 /* AppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsViewController.h; sourceTree = "<group>"; };
+		6B16BFCF1BAF501100FB2EF7 /* AppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsViewController.m; sourceTree = "<group>"; };
+		6B16BFD11BAF503100FB2EF7 /* iTunesAppResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunesAppResult.h; sourceTree = "<group>"; };
+		6B16BFD21BAF503100FB2EF7 /* iTunesAppResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iTunesAppResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +121,18 @@
 			children = (
 				6B16BF8F1BAF046D00FB2EF7 /* AppDelegate.h */,
 				6B16BF901BAF046D00FB2EF7 /* AppDelegate.m */,
+				6B16BFD11BAF503100FB2EF7 /* iTunesAppResult.h */,
+				6B16BFD21BAF503100FB2EF7 /* iTunesAppResult.m */,
+				6B16BFC81BAF4E5A00FB2EF7 /* iTunesMovieResult.h */,
+				6B16BFC91BAF4E5A00FB2EF7 /* iTunesMovieResult.m */,
 				6B16BFC51BAF34CC00FB2EF7 /* iTunesMusicResult.h */,
 				6B16BFC61BAF34CC00FB2EF7 /* iTunesMusicResult.m */,
 				6B16BFBF1BAF050F00FB2EF7 /* APIManager.h */,
 				6B16BFC01BAF050F00FB2EF7 /* APIManager.m */,
+				6B16BFCE1BAF501100FB2EF7 /* AppsViewController.h */,
+				6B16BFCF1BAF501100FB2EF7 /* AppsViewController.m */,
+				6B16BFCB1BAF4EB400FB2EF7 /* MovieViewController.h */,
+				6B16BFCC1BAF4EB400FB2EF7 /* MovieViewController.m */,
 				6B16BFC21BAF0A5000FB2EF7 /* MusicViewController.h */,
 				6B16BFC31BAF0A5000FB2EF7 /* MusicViewController.m */,
 				6B16BF951BAF046D00FB2EF7 /* Main.storyboard */,
@@ -285,7 +305,11 @@
 			files = (
 				6B16BFC11BAF050F00FB2EF7 /* APIManager.m in Sources */,
 				6B16BFC41BAF0A5000FB2EF7 /* MusicViewController.m in Sources */,
+				6B16BFD31BAF503100FB2EF7 /* iTunesAppResult.m in Sources */,
+				6B16BFD01BAF501100FB2EF7 /* AppsViewController.m in Sources */,
 				6B16BFC71BAF34CC00FB2EF7 /* iTunesMusicResult.m in Sources */,
+				6B16BFCD1BAF4EB400FB2EF7 /* MovieViewController.m in Sources */,
+				6B16BFCA1BAF4E5A00FB2EF7 /* iTunesMovieResult.m in Sources */,
 				6B16BF911BAF046D00FB2EF7 /* AppDelegate.m in Sources */,
 				6B16BF8E1BAF046D00FB2EF7 /* main.m in Sources */,
 			);

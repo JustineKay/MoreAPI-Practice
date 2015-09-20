@@ -12,5 +12,8 @@
 
 @property (nonatomic) NSString *album;
 @property (nonatomic) NSString *artist;
+@property (nonatomic) UIImage *thumbnailImage;
+
+-(UIImage *)createImageFromString: (NSString *)urlString;
 
 @end

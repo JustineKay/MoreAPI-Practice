@@ -7,9 +7,19 @@
 //
 
 #import "iTunesMusicResult.h"
+#import <UIKit/UIKit.h>
 
 @implementation iTunesMusicResult
 
-
+-(UIImage *)createImageFromString:(NSString *)urlString{
+    
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    NSData  *pictureData = [NSData dataWithContentsOfURL:url];
+    
+    UIImage *picture = [UIImage imageWithData:pictureData];
+    
+    return picture;
+}
 
 @end
