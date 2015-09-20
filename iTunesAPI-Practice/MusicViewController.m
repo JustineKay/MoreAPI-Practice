@@ -61,6 +61,7 @@
                 NSString *collectionName = [result objectForKey:@"trackName"];
                 
                 iTunesMusicResult *musicObject = [[iTunesMusicResult alloc] init];
+                
                 musicObject.artist = artistName;
                 musicObject.album = collectionName;
                 
