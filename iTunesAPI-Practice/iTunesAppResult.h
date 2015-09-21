@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface iTunesAppResult : NSObject
 
 @property (nonatomic) NSString *name;
+@property (nonatomic) UIImage *appIcon;
+
 
 @end

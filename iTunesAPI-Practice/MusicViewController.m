@@ -67,7 +67,7 @@
                 
                 musicObject.artist = artistName;
                 musicObject.album = collectionName;
-                //musicObject.thumbnailImage = thumbnailImage;
+                musicObject.thumbnailImage = thumbnailImage;
                 
                 [self.searchResults addObject:musicObject];
                 

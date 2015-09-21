@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface iTunesMovieResult : NSObject
 
 @property (nonatomic) NSString *title;
+@property (nonatomic) UIImage *artworkImage;
 
 @end

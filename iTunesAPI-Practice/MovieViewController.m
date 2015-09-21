@@ -50,8 +50,12 @@
                 
                 NSString *movieTitle = [result objectForKey:@"trackName"];
                 
+                NSString *thumbnailImageURL = [result objectForKey:@"artworkUrl100"];
+                UIImage *thumbnailImage = [APIManager createImageFromString:thumbnailImageURL];
+                
                 iTunesMovieResult *movieObject = [[iTunesMovieResult alloc] init];
                 movieObject.title = movieTitle;
+                movieObject.artworkImage = thumbnailImage;
                 
                 [self.searchResults addObject:movieObject];
                 
@@ -82,6 +86,7 @@
     
     iTunesMovieResult *currentResult = self.searchResults[indexPath.row];
     
+    cell.imageView.image = currentResult.artworkImage;
     cell.textLabel.text = currentResult.title;
     
     return cell;

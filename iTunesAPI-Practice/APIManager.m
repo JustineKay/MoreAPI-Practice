@@ -43,9 +43,7 @@
 
 + (UIImage *)createImageFromString:(NSString *)urlString{
     
-    NSString *encodedString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    
-    NSURL *url = [NSURL URLWithString:encodedString];
+    NSURL *url = [NSURL URLWithString:urlString];
     
     NSData  *imageData = [NSData dataWithContentsOfURL:url];
     

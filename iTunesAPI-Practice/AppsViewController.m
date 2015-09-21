@@ -51,8 +51,13 @@
                 
                 NSString *appName = [result objectForKey:@"trackCensoredName"];
                 
+                
+                NSString *thumbnailImageURL = [result objectForKey:@"artworkUrl60"];
+                UIImage *thumbnailImage = [APIManager createImageFromString:thumbnailImageURL];
+                
                 iTunesAppResult *appObject = [[iTunesAppResult alloc] init];
                 appObject.name = appName;
+                appObject.appIcon = thumbnailImage;
                 
                 [self.searchResults addObject:appObject];
                 
@@ -82,6 +87,7 @@
     
     iTunesAppResult *currentResult = self.searchResults[indexPath.row];
     
+    cell.imageView.image = currentResult.appIcon;
     cell.textLabel.text = currentResult.name;
     
     return cell;
