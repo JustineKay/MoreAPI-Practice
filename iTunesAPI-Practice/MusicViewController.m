@@ -60,10 +60,14 @@
                 NSString *artistName = [result objectForKey:@"artistName"];
                 NSString *collectionName = [result objectForKey:@"trackName"];
                 
+                NSString *thumbnailImageURL = [result objectForKey:@"artworkUrl100"];
+                UIImage *thumbnailImage = [APIManager createImageFromString:thumbnailImageURL];
+                
                 iTunesMusicResult *musicObject = [[iTunesMusicResult alloc] init];
                 
                 musicObject.artist = artistName;
                 musicObject.album = collectionName;
+                //musicObject.thumbnailImage = thumbnailImage;
                 
                 [self.searchResults addObject:musicObject];
                 
@@ -106,6 +110,7 @@
     
     cell.textLabel.text = currentResult.artist;
     cell.detailTextLabel.text = currentResult.album;
+    cell.imageView.image = currentResult.thumbnailImage;
     
     return cell;
 }

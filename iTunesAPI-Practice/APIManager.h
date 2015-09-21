@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface APIManager : NSObject
 
 + (void)GetRequestWithURL: (NSURL *)url
         completionHandler: (void(^)(NSData *data, NSURLResponse *response, NSError *error))completionHandler;
+
++ (UIImage *)createImageFromString:(NSString *)urlString;
 
 @end

@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface iTunesMusicResult : NSObject
 
 @property (nonatomic) NSString *album;
 @property (nonatomic) NSString *artist;
 @property (nonatomic) UIImage *thumbnailImage;
-
--(UIImage *)createImageFromString: (NSString *)urlString;
 
 @end
